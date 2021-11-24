@@ -1,3 +1,9 @@
+.container {
+  margin-inline: auto;
+  padding-inline: 2em;
+  max-width: 80rem;
+}
+
 .flex {
   display: flex;
   gap: var($gap, 1rem);
@@ -6,12 +12,6 @@
 .grid {
   display: grid;
   gap: var($gap, 1rem);
-}
-
-.container {
-  margin-inline: auto;
-  padding-inline: 2em;
-  max-width: 80rem;
 }
 
 .sr-only {

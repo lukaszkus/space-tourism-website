@@ -3,15 +3,12 @@
 @import "./variables";
 @import "./utility";
 
-//custom properties
-
 html {
-  font-size: 10px;
+  font-size: 16px;
 }
 
 body {
   background-color: $color-dark;
-  line-height: 1.5;
   min-height: 100vh;
 }
 
@@ -19,40 +16,40 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: $font-serif;
+  font-family: $ff-serif;
   text-transform: uppercase;
   color: $color-white;
   font-weight: 400;
 }
 
 h1 {
-  font-size: 15rem;
+  font-size: $fs-900;
 }
 
 h2 {
-  font-size: 10rem;
+  font-size: $fs-800;
 }
 
 h3 {
-  font-size: 5.6rem;
+  font-size: $fs-700;
 }
 
 h4 {
-  font-size: 3.2rem;
+  font-size: $fs-600;
 }
 
 h5 {
-  font-family: $font-sans-cond;
+  font-family: $ff-sans-cond;
   color: $color-light;
-  font-size: 2.8rem;
+  font-size: $fs-500;
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.475rem;
+  letter-spacing: $ls-1;
 }
 
 p {
-  font-family: $font-sans-normal;
+  font-family: $ff-sans-normal;
   color: $color-light;
-  font-size: 1.8rem;
+  font-size: $fs-400;
   font-weight: 400;
 }

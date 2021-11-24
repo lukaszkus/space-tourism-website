@@ -4,9 +4,24 @@ $color-dark: hsl(230, 35%, 7%);
 $color-light: hsl(231, 77%, 90%);
 
 //Fonts
-$font-serif: "Bellefair", serif;
-$font-sans-normal: "Barlow", sans-serif;
-$font-sans-cond: "Barlow Condensed", sans-serif;
+$ff-serif: "Bellefair", serif;
+$ff-sans-normal: "Barlow", sans-serif;
+$ff-sans-cond: "Barlow Condensed", sans-serif;
+
+//Font sizes
+$fs-900: 9.375rem; //150px
+$fs-800: 6.25rem; //100px
+$fs-700: 3.5rem; //56px
+$fs-600: 2rem; //32px
+$fs-500: 1.75rem; //28px
+$fs-400: 1.125rem; //18px
+$fs-300: 1rem; //16px
+$fs-200: 0.875rem; //14px
+
+//Letter spacing
+$ls-1: 4.75px;
+$ls-2: 2.7px;
+$ls-3: 2.35px;
 
 //Flexbox & Grid
 $gap: 1rem;
