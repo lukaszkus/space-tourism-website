@@ -8,16 +8,36 @@ export default function Navigation(){
     <nav className="nav">
         <ul>
           <li>
-            <Link to="/" className="nav__link" activeClassName="active"><span>00</span>Home</Link>
+            <Link
+              to="/"
+              className="nav__link"
+              activeclassname="active"
+              ><span>00</span>Home
+            </Link>
           </li>
           <li>
-            <Link to="destination" className="nav__link" activeClassName="active"><span>01</span>Destination</Link>
+            <Link
+              to="destination"
+              className="nav__link"
+              activeclassname="active"
+              ><span>01</span>Destination
+            </Link>
           </li>
           <li>
-            <Link to="crew" className="nav__link" activeClassName="active"><span>02</span>Crew</Link>
+            <Link
+              to="crew"
+              className="nav__link"
+              activeclassname="active"
+              ><span>02</span>Crew
+            </Link>
           </li>
           <li>
-            <Link to="technology" className="nav__link" activeClassName="active"><span>03</span>Technology</Link>
+          <Link
+              to="technology"
+              className="nav__link"
+              activeclassname="active"
+              ><span>03</span>Technology
+            </Link>
           </li>
         </ul>
     </nav>

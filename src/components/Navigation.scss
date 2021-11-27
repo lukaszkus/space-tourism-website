@@ -15,6 +15,9 @@
         border: 0;
         border-bottom: 0.2rem solid $color-white-0;
         transition: 0.3s;
+        span {
+          border: 0;
+        }
         &:hover,
         &:focus {
           border-color: $color-white-50;

@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import './Destination.scss';
+
 export default function Destination() {
   return (
     <>
