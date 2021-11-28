@@ -5,7 +5,7 @@ import './Destination.scss';
 export default function Destination() {
   return (
     <>
-      <main>
+      <main className="container">
         <h2>Destination</h2>
         <p>You can do this, I believe in you.</p>
       </main>

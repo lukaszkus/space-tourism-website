@@ -2,18 +2,18 @@ import * as React from "react";
 import { Routes, Route } from "react-router-dom";
 import './styles/main.scss';
 
-import Home from "./pages/Home";
-import Destination from "./pages/Destination";
-import Crew from "./pages/Crew";
-import Technology from "./pages/Technology";
-import NotFound from "./pages/NotFound";
+import Home from "./pages/Home/Home";
+import Destination from "./pages/Destination/Destination";
+import Crew from "./pages/Crew/Crew";
+import Technology from "./pages/Technology/Technology";
+import NotFound from "./pages/NotFound/NotFound";
 
-import Navigation from "./components/Navigation";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="container">
-      <Navigation />
+    <>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="destination" element={<Destination />} />
@@ -21,7 +21,7 @@ function App() {
         <Route path="technology" element={<Technology/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </div>
+    </>
   );
 }
 

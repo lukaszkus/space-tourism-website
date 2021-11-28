@@ -1,10 +1,12 @@
 import * as React from "react";
 
-export default function Technology() {
+import './Crew.scss';
+
+export default function Crew() {
   return (
     <>
-      <main>
-        <h2>Technology</h2>
+      <main className="container">
+        <h2>Crew</h2>
         <p>You can do this, I believe in you.</p>
       </main>
     </>
