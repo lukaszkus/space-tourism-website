@@ -1,25 +1,28 @@
-.container {
-  margin-inline: auto;
-  padding-inline: 1em;
-  max-width: 80rem;
-}
+// .container {
+//   margin-inline: auto;
+//   padding-inline: 1em;
+//   max-width: 80rem;
+// }
 
 .grid-container {
   border: 1px solid yellow;
   display: grid;
-  column-gap: 2rem;
   // place-items: center;
   // padding-inline: 1rem;
-  grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(
-      1rem,
-      1fr
-    );
-  .col-left {
-    grid-column: 2;
-    border: 1px solid red;
-  }
-  .col-right {
-    grid-column: 3;
-    border: 1px solid blue;
+
+  @include tablet {
+    column-gap: 2rem;
+    grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(
+        1rem,
+        1fr
+      );
+    .col-left {
+      grid-column: 2;
+      border: 1px solid red;
+    }
+    .col-right {
+      grid-column: 3;
+      border: 1px solid blue;
+    }
   }
 }
