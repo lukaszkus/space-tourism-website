@@ -8,48 +8,13 @@ html {
 }
 
 body {
+  font-family: $ff-sans-normal;
+  font-size: $fs-400;
+  color: $color-white;
+  line-height: 1.5;
   background-color: $color-dark;
   min-height: 100vh;
-}
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: $ff-serif;
-  text-transform: uppercase;
-  color: $color-white;
-  font-weight: 400;
-}
-
-h1 {
-  font-size: $fs-900;
-}
-
-h2 {
-  font-size: $fs-800;
-}
-
-h3 {
-  font-size: $fs-700;
-}
-
-h4 {
-  font-size: $fs-600;
-}
-
-h5 {
-  font-family: $ff-sans-cond;
-  color: $color-light;
-  font-size: $fs-500;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: $ls-1;
-}
-
-p {
-  font-family: $ff-sans-normal;
-  color: $color-light;
-  font-size: $fs-400;
-  font-weight: 400;
+  display: grid;
+  grid-template-rows: min-content 1fr;
 }
