@@ -13,8 +13,8 @@ $ff-sans-normal: "Barlow", sans-serif;
 $ff-sans-cond: "Barlow Condensed", sans-serif;
 
 //Font sizes
-$fs-900: #{"clamp(5rem, 8vw + 1rem, 9.375rem)"};
-// $fs-900: 9.375rem; //150px
+// $fs-900: #{"clamp(5rem, 8vw + 1rem, 9.375rem)"};
+$fs-900: 9.375rem; //150px
 $fs-800: 6.25rem; //100px
 $fs-700: 3.5rem; //56px
 $fs-600: 2rem; //32px

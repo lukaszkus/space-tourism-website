@@ -5,24 +5,38 @@
 // }
 
 .grid-container {
-  border: 1px solid yellow;
+  border: 5px solid yellow;
   display: grid;
-  // place-items: center;
-  // padding-inline: 1rem;
-
+  text-align: center;
+  place-items: center;
+  padding-inline: 1rem;
   @include tablet {
+    * {
+      max-width: 50ch;
+    }
+  }
+
+  @include desktop {
+    text-align: left;
     column-gap: 2rem;
     grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(
         1rem,
         1fr
       );
-    .col-left {
+    > *:first-child {
       grid-column: 2;
       border: 1px solid red;
     }
-    .col-right {
+    > *:last-child {
       grid-column: 3;
       border: 1px solid blue;
     }
+  }
+}
+
+.grid-container--home {
+  @include desktop {
+    padding-bottom: 8rem;
+    align-items: end;
   }
 }

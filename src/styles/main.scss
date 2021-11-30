@@ -9,12 +9,16 @@ html {
 }
 
 body {
-  display: grid;
-  grid-template-rows: min-content 1fr;
   font-family: $ff-sans-normal;
   font-size: $fs-400;
   color: $color-white;
   line-height: 1.5;
   background-color: $color-dark;
   min-height: 100vh;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  height: 100%;
 }

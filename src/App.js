@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Routes, Route } from "react-router-dom";
-import './styles/main.scss';
+import "./styles/main.scss";
 
 import Home from "./pages/Home/Home";
 import Destination from "./pages/Destination/Destination";
@@ -18,7 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="destination" element={<Destination />} />
         <Route path="crew" element={<Crew />} />
-        <Route path="technology" element={<Technology/>} />
+        <Route path="technology" element={<Technology />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
