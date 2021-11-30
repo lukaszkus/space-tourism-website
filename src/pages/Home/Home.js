@@ -18,7 +18,7 @@ export default function Home() {
             world experience!
           </p>
         </div>
-        <div class="col-right">
+        <div className="col-right">
           <a href="/" className="cta">
             Explore
           </a>

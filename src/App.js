@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./styles/main.scss";
 
@@ -11,9 +12,14 @@ import NotFound from "./pages/NotFound/NotFound";
 import Header from "./components/Header";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
   return (
     <>
-      <Header />
+      <Header isOpen={isOpen} toggle={toggle} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="destination" element={<Destination />} />

@@ -5,7 +5,6 @@
 // }
 
 .grid-container {
-  border: 5px solid yellow;
   display: grid;
   text-align: center;
   place-items: center;
@@ -25,19 +24,17 @@
       );
     > *:first-child {
       grid-column: 2;
-      border: 1px solid red;
     }
     > *:last-child {
       grid-column: 3;
-      border: 1px solid blue;
     }
   }
 }
 
 .grid-container--home {
   @include desktop {
-    padding-bottom: 8rem;
-    align-items: end;
+    // padding-bottom: 4rem;
+    // align-items: end;
   }
 }
 

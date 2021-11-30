@@ -1,11 +1,17 @@
-import * as React from "react";
+import React from 'react'
 import { NavLink as Link } from "react-router-dom";
 
-import './Navigation.scss';
+import {ReactComponent as Close} from '../assets/shared/icon-close.svg';
 
-export default function Navigation(){
+import './MobileMenu.scss'
+
+export default function MobileMenu({ isOpen, toggle }) {
+
+  const menuVisibility = isOpen ? { opacity: "100%", top: 0 } : { opacity: 0, right: "-100%" };
+
   return (
-    <nav className="nav">
+    <nav className="mobile" style={menuVisibility}>
+      <Close className="mobile-close" onClick={toggle}/>
         <ul>
           <li>
             <Link
@@ -39,7 +45,7 @@ export default function Navigation(){
               ><span>03</span>Technology
             </Link>
           </li>
-      </ul>
+        </ul>
     </nav>
   )
 }

@@ -3,16 +3,17 @@ import * as React from "react";
 import "./Header.scss";
 
 import Logo from "./Logo";
-import Navigation from "./Navigation";
+import MobileMenu from './MobileMenu';
+import MobileBtn from './MobileBtn';
+import Navigation from './Navigation';
 
-export default function Header() {
+export default function Header({ isOpen, toggle }) {
   return (
     <header className="header">
       <Logo />
-      <button className="mobile">
-        <span className="hidden">Menu</span>
-      </button>
       <Navigation />
+      <MobileBtn toggle={toggle}/>
+      <MobileMenu isOpen={isOpen} toggle={toggle} />
     </header>
   );
 }
