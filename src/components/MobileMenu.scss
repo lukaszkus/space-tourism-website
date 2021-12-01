@@ -3,15 +3,20 @@
 .mobile {
   position: fixed;
   z-index: 999;
-  width: 75%;
+  width: 80%;
   height: 100%;
   background-color: $color-white-05;
-  // display: grid;
-  // align-self: center;
   top: 0;
   right: 0;
   transition: 0.3s ease-in-out;
   backdrop-filter: blur(40px);
+
+  .mobile-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+  }
 
   ul {
     display: flex;
@@ -22,23 +27,16 @@
     margin: 0;
 
     li {
-      * {
-        cursor: pointer;
-        border: 0;
-        border-right: 0.2rem solid $color-white-0;
-        transition: 0.3s;
-        span {
-          border: 0;
-        }
-        &:hover,
-        &:focus {
-          border-color: $color-white-50;
-          transition: 0.6s;
-        }
-      }
-      .active {
-        color: $color-white;
+      cursor: pointer;
+      border-right: 0.2rem solid $color-white-0;
+      transition: 0.3s;
+      &:active {
         border-color: $color-white;
+      }
+      &:hover,
+      &:focus {
+        border-color: $color-white-50;
+        transition: 0.6s;
       }
     }
   }
@@ -53,12 +51,5 @@
       font-weight: 700;
       margin-right: 0.5em;
     }
-  }
-
-  .mobile-close {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    cursor: pointer;
   }
 }
